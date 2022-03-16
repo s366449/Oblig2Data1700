@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobiletter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Billetter</h1>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="film">Film:</label>
+                        <select id="film">
+                            <option value="Velg film">Velg film</option>
+                            <option>Hercules</option>
+                            <option>Uncharted</option>
+                            <option>Dora</option>
+                        </select>
+                        <p id="feilMeldingFilm"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="antall">Antall</label>
+                        <input type="number" class="form-control" id="antall"/>
+                        <p id="feilMeldingAntall"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="fornavn">Fornavn</label>
+                        <input type="text" class="form-control" id="fornavn"/>
+                        <p id="feilMeldingFnavn"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="etternavn">Etternavn</label>
+                        <input type="text" class="form-control" id="etternavn"/>
+                        <p id="feilMeldingEnavn"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefonnr">Telefonnr</label>
+                        <input type="number" class="form-control" id="telefonnr"/>
+                        <p id="feilMeldingTlf"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="epost">Epost</label>
+                        <input type="text" class="form-control" id="epost"/>
+                        <p id="feilMeldingEpost"></p>
+                    </div>
+                </form>
+                <button class="btn btn-primary" onclick="register()">Kjøp Billett</button>
+            </div>
+            <div class="col-md-8">
+                <h3>Alle Billettene:</h3>
+                <div id="Biletter" class="table-responsive"></div>
+                <button class="btn btn-danger"onclick="deleteAll()">Slett alle bilettene</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

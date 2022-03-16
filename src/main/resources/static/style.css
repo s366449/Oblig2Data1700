@@ -1,0 +1,38 @@
+Antall{
+    width: 700px;
+    padding: 5px;
+}
+Film{
+    width: 700px;
+    padding: 5px;
+}
+Fornavn{
+    width: 700px;
+    padding: 5px;
+}
+Etternavn{
+    width: 700px;
+    padding: 5px;
+}
+Telefonnr{
+    width: 700px;
+    padding: 5px;
+}
+Epost{
+    width: 700px;
+    padding: 5px;
+}
+
+info{
+    width: 700px;
+    padding: 5px;
+}
+
+h3{
+    color: black;
+}
+
+p{
+    display : inline;
+
+}
